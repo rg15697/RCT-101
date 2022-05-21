@@ -1,0 +1,32 @@
+.Cont{
+    border: solid red 2px;
+    max-width: max-content;
+    margin: auto;
+    background-color: grey;
+}
+.padd{
+    padding: 20px;
+}
+
+.ElemCont{
+    display:flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    width:95%;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    margin-top: 30px;
+}
+.mainCont{
+    width:100%;
+   
+}
+input[type=radio]{
+    font: inherit;
+    /* color: green; */
+    background-color: green;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+}

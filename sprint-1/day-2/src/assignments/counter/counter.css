@@ -1,0 +1,37 @@
+.Counter{
+    display: grid;
+    grid-template-areas: "b a";
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Counter>div:nth-child(1){
+    grid-area: a;
+    padding: 20px;
+}
+.Counter>div:nth-child(1)>h3{
+  margin-top: 50px;
+}
+.Counter>div:nth-child(2){
+    grid-area: b;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.count{
+    vertical-align: center;
+    text-align: center;
+}
+.button{
+    max-width: 300px;
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:rgb(81, 190, 226);
+}

@@ -1,0 +1,17 @@
+.mainCOnt{
+    width:60%;
+    background-color: grey;
+}
+.headerCont{
+    display: flex;
+    justify-content: space-between;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+img{
+    height: 200px;
+    width: 200px;
+}

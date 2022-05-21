@@ -1,0 +1,13 @@
+.todoCont{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.todoitem{
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+}
+.variation{
+    color:red
+}
