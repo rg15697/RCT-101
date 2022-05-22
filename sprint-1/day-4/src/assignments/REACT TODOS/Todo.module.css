@@ -1,0 +1,12 @@
+.MainCont{
+    border: solid red 2px;
+}
+.TodoInputCont{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.addButton{
+    border: none;
+    outline: none;
+}
