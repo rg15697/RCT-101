@@ -1,6 +1,43 @@
 .mainCOnt{
     width:60%;
-    background-color: grey;
+    margin: auto;
+    margin-top: 50px;
+}
+.Cont{
+    padding: 40px;
+
+}
+.upperDiv{
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    align-content: center;
+}
+.leftUpperDiv{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    justify-content: space-between;
+    height: 100%;
+}
+.date{
+    font-size: 18px;
+    font-weight: 600;
+}
+.caseStudy{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+.logoDiv{
+    height: 100%;
+}
+.logoDiv>img{
+    height: 80%;
+    width: 120px;
+    margin-top: 15px;
 }
 .headerCont{
     display: flex;
@@ -14,4 +51,8 @@
 img{
     height: 200px;
     width: 200px;
+}
+.lowerDiv{
+    display: flex;
+    justify-content: space-between;
 }
