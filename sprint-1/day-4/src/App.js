@@ -8,6 +8,7 @@ import Sibling from './pre/Sibling';
 //=========================class==================================
 
 import Parent from './Class/Parent';
+import TODO from './assignments/REACT TODOS/TODO';
 
 function App() {
   return (
@@ -15,16 +16,20 @@ function App() {
 
 {/*  ========================= pre==================================== */}
 
-      <h1>State upLifting</h1>
+      {/* <h1>State upLifting</h1>
        <div style={{display:'flex',gap:"20px",justifyContent:"center", border:"solid red 2px", padding:"10px"}} >
           <ParentToChild />
           <ChildToParent />
           <Sibling />
-        </div>
+        </div> */}
         
 {/* =========================class==================================           */}
         
-        <Parent />
+        {/* <Parent /> */}
+
+{/* =========================Assignment==================================           */}
+                  <TODO />
+
     </div>
   );
 }

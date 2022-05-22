@@ -1,6 +1,7 @@
 import React from 'react'
+import styles from "./Todo.module.css"
 
-const TodoInput = ({query,handleChange,handleAdd}) => {
+const TodoInput = ({value,handleChange,handleAdd}) => {
   return (
     <div>
         <div className={styles.TodoInputCont} >
@@ -10,17 +11,17 @@ const TodoInput = ({query,handleChange,handleAdd}) => {
                 onClick={handleAdd}> + 
                 </button>  
                     <input 
+                    disabled={!value}
                     type="text"
-                    value={query}
+                    value={value}
                     onChange={handleChange}
                     placeholder="Add a to-do..."
                     />
                
             </div>
-            <div>
-            <a target="_blank" href="https://icons8.com/icon/19295/star">Star</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-            </div>
         </div>
+
+
     </div>
   )
 }

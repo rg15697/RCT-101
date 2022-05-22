@@ -3,7 +3,7 @@ import {useState} from "react"
 import './App.css';
 import TodoApp from "./components/TodoApp"
 import Counter from "./components/Counter"
-import PaymentCard from "./assignments/React - Payment card/PaymentCard";
+// import PaymentCard from "./assignments/React - Payment card/PaymentCard";
 function App() {
 
 
@@ -11,23 +11,23 @@ function App() {
 
 
     const [toggle, setToggle] = useState(false);
-    //        return (
-    //          <div className="App">
-    //          <button onClick={()=>setToggle(!toggle)} >
-    //              {toggle ? 'Show TodoApp' : 'show Counter'}
-    //         </button>
-    //          {toggle ? <Counter /> : <TodoApp /> }
-    //     </div>
-    //    )
+           return (
+             <div className="App">
+             <button onClick={()=>setToggle(!toggle)} >
+                 {toggle ? 'Show TodoApp' : 'show Counter'}
+            </button>
+             {toggle ? <Counter /> : <TodoApp /> }
+        </div>
+       )
 
 
     //    =====================Assignment=======================
 
-    return (
-        <div>
-            <PaymentCard />
-        </div>
-    )
+    // return (
+    //     <div>
+    //         <PaymentCard />
+    //     </div>
+    // )
 
 
 }
