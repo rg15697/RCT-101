@@ -1,6 +1,8 @@
 import React from 'react'
+import DetailsList from "./DetailsList"
+import PageChanger from "./PageChanger"
 import styles from "./design.module.css"
-import Item from './Item';
+// import Item from './Item';
 
 
 const BasedOnJsonServer = () => {
@@ -98,20 +100,13 @@ const BasedOnJsonServer = () => {
             <button disabled={name=="" || email=="" || address == ""} onClick={()=>AddTodo(name,email,address)} >Add </button>
               </form>
           </div>
-
-         <div className={styles.MainContCont}>
-             {data.map((elem) => 
-                 
-                 <Item key={elem.id} elem={elem} />
-             )}
-         </div>
-
-        <div style={{display:"flex",justifyContent:"space-between"}}>
-            <button disabled={page===1} onClick={() =>setPage(page-1)} >prev Page</button>
-            <h3 className={styles.page} >Page : {page}</h3>
-            <button disabled={data.length<4}  onClick={() =>setPage(page+1)} >Next Page</button>
-           
-        </div>
+           <DetailsList data={data} />
+           <PageChanger
+             page={page}
+             data={data}
+             handlePageIncrement={()=>setPage(page+1)}
+             handlePageDecrement={()=>setPage(page-1)}
+           />
         </div>
   )
 }
