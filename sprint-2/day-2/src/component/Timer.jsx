@@ -18,8 +18,8 @@ const Timer = () => {
     },[time])
     return (
     <div>Count Down : {time}</div>
-    // <button onClick={()=>setTimer(timer=>timer-1)} >-</button>
-    // <button onClick={()=>setTimer(timer=>timer-1)} >-</button>
+    // <button onClick={()=>setTimer(timer-1)} >-</button>
+    // <button onClick={()=>setTimer(timer+1)} >-</button>
     )
 }
 
