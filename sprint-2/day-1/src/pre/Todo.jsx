@@ -13,11 +13,12 @@ const Todo = () => {
 },[page]);
   const getTodos = (page = 1) =>{
     setIsLoading(true)
-    fetch(`https://json-server-mocker-masai.herokuapp.com/tasks?_page=${page}&_limit=3`)
+    fetch(`https://json-server-mocker-masai.herokuapp.com/tasks?_page=${page}&_limit=5`)
     .then((res) => res.json())
     .then((res) =>{
         console.log(res)
         setData(res)
+        console.log(data)
     })
     .catch((err)=>{
         setIsError(true)
@@ -73,7 +74,7 @@ const Todo = () => {
             ))}
         </div>
         <h3>Page : {page}</h3>
-        <button  onClick={() =>setPage(page+1)} >Next Page</button>
+        <button disabled={data.length==0}  onClick={() =>setPage(page+1)} >Next Page</button>
         <button disabled={page===1} onClick={() =>setPage(page-1)} >prev Page</button>
     </div>
   )

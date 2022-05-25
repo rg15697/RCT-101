@@ -10,6 +10,11 @@ import Todo from './pre/Todo';
 // =====================Class====================
 
 
+
+//==========================Assignment============
+
+import BasedOnJsonServer from "./assignments/BasedOnJsonServer"
+
 function App() {
   return (
     <div className="App">
@@ -18,8 +23,11 @@ function App() {
           {/* <Main init={0} /> */}
           {/* <Conc2 /> */}
           {/* <Example /> */}
-          <Todo />
-        {/* =====================Class==================== */}         
+          {/* <Todo /> */}
+        {/* =====================Class==================== */}    
+
+
+        <BasedOnJsonServer />     
         
     </div>
   );

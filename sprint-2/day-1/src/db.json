@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Satheesh",
+      "email": "Sat@mail.com",
+      "adderss": "South street",
+      "status": false
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "email": "john@mail.com",
+      "adderss": "North street",
+      "status": false
+    },
+    {
+      "id": 3,
+      "name": "Robert",
+      "email": "robert@mail.com",
+      "adderss": "East street",
+      "status": false
+    },
+    {
+      "id": 4,
+      "name": "Mani",
+      "email": "mani@mail.com",
+      "adderss": "West street",
+      "status": false
+    },
+    {
+      "id": 1653450612179,
+      "name": "Rohit ",
+      "email": "RG15697@GMAIL.COM",
+      "adderss": "lucknow",
+      "status": false
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1,
+      "status": false
+    }
+  ],
+  "profile": {
+    "id": 1653448015436,
+    "name": "edae",
+    "status": false
+  }
+}
