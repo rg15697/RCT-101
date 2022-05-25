@@ -2,10 +2,8 @@ import React from 'react'
 import DetailsList from "./DetailsList"
 import PageChanger from "./PageChanger"
 import styles from "./design.module.css"
-// import Item from './Item';
 
-
-const BasedOnJsonServer = () => {
+const Todo = () => {
 
     const [data,setData] = React.useState([]);
     const [name,setName] = React.useState("");
@@ -28,6 +26,7 @@ const BasedOnJsonServer = () => {
        fetch(`http://localhost:8080/posts?_page=${page}&_limit=4`)
        .then((res) => res.json())
        .then((res) =>{
+    //    let newData = [...data,res]
        setData(res)
        console.log (data)
   
@@ -39,6 +38,7 @@ const BasedOnJsonServer = () => {
            setIsLoading(false)
        })
     }
+    // console.log(email,address)
     const AddTodo = (name,email,address)=>{
    
        let payLoad = {
@@ -109,4 +109,4 @@ const BasedOnJsonServer = () => {
   )
 }
 
-export default BasedOnJsonServer
+export default Todo
