@@ -1,0 +1,14 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    margin:0px 10px 0px 10px;
+    background-color: black;
+}
+.Dark{
+    color:white;
+    background-color: black;
+}
+.Light{
+    color:black;
+    background-color: white;
+}
