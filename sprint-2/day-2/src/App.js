@@ -12,12 +12,12 @@ function App() {
   return (
         <div className="App">
               {/* <Todos />
-              <Timer />
-              <StopWatch /> */}
+              <Timer /> */}
+              <StopWatch />
 
               {/* =====================Assignment=================== */}
 
-              <Timer start={0} end={15} />
+              {/* <Timer start={0} end={15} /> */}
         </div>
   );
 }

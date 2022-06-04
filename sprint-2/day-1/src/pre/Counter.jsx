@@ -8,7 +8,6 @@ const Counter = (props) => {
     
     React.useEffect(()=>{
         console.log("no dependencies");
-    
     //     // it upadates the componenet during mounting,unmounting and updating
     });
 

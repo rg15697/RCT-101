@@ -12,6 +12,8 @@ const Timer = () => {
             }
         },1000)
 
+
+        // cleanup function 
         return ()=> {
             clearInterval(id)
         }

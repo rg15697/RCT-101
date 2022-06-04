@@ -8,13 +8,11 @@ function Todos() {
     const [page,setPage] = useState(1)
     const [totalCount,setTotalCount] = useState(0)
     const [limit,setLimit] = useState(2)
+
+    
     useEffect(() => {
         const getTodos = async () =>{
-            // let res = await fetch("https://http://localhost:8080/posts")
-            // let data = await res.json()
-
             let res = await axios.get(`http://localhost:8080/posts?_page=${page}&_limit=${limit}`)
-            // console.log(res.data)
             setTodos(res.data);
             setTotalCount(Number(res.headers["x-total-count"]))
             console.log(todos)
@@ -37,8 +35,6 @@ function Todos() {
         </select>
        <button disabled={totalCount<=page*limit} onClick={()=>setPage(page+1)} >{">"} </button>
     </div>
-
-
 
        <div className="ListCont">
            {todos.map((elem)=>(

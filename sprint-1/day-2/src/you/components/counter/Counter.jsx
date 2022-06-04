@@ -2,21 +2,19 @@ import React from 'react'
 
 function Counter({initValue}) {
     const [count,setCount] = React.useState(initValue)
-    const handleValue = (value) => {
-        // if(count>=10){
-        //     value = -5
-        // }
-        setCount(count+value)
-    }
-    const handleIncrement = ()=>{
-        setCount(count+5)
-    }
+
+
+
+    
+    const handleValue = (value) => setCount(count+value)
+    const handleIncrement = ()=> setCount(count+5)
     const handleMultiplicationBy5 = () => setCount(count*5)
+
   return (
        <>
            <h1>Counter App</h1>
            <div>
-               <h3 >Current Value : {count}</h3>
+               <h3 >Current Value : {count%2==0 ? "hello" : count}</h3>
                <div>
                   <button onClick={()=>handleValue(+1)}>Increment</button>
                   <button onClick={()=>handleValue(-1)}>Decrement</button>

@@ -3,6 +3,8 @@ import React from "react";
 export const Task = () => {
     const [query,setQuery] = React.useState("");
     const [tasks,setTasks] = React.useState([])
+
+
     const handleChange = (e) => {
          const value = e.target.value;
          setQuery(value)    
@@ -22,7 +24,7 @@ export const Task = () => {
             <div>
                 <input
                  type="text"
-                 value={query}
+                //  value={query}
                  onChange={handleChange}
                  placeholder="add Somethibg"
                  />

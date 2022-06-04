@@ -8,7 +8,7 @@ import Navbar from "./assignments/Navbar/Navbar";
 
 function App() {
 
-     // let nam = 'Aaro'
+    // let nam = 'Aaro'
     // passing variable
     let info = [
         {name:"Roh",place:'Azamgarh',infoX:{
@@ -30,7 +30,7 @@ function App() {
     ]
   return (
     <div className="App">
-        {/* <Hello />
+        {/* <Hello />*/}
         <Answer1 name="Aaro" place="Azamgarh" />
         <Answer1 name="Rohit" place="Azamgarh" />
         <Answer1 name="Shivam" place="Azamgarh" />
@@ -54,7 +54,7 @@ function App() {
 
     
       <Main /> 
-       <StaticCard />  */}
+       <StaticCard />  
        <Navbar />
     </div>
   );
