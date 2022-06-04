@@ -60,7 +60,7 @@ const Reactform = () => {
         console.log("delete",id)
         let newtodo = todos.filter((elem)=>elem.id!=id)
         console.log(newtodo)
-         setTodos("newtodod " ,newtodo);
+         setTodos(newtodo);
         //  getData(todos)
     }
 
