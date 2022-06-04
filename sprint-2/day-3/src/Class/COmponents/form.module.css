@@ -1,0 +1,15 @@
+.formInput{
+    height:40px;
+    width: 600px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.password{
+    /* background-color: red; */
+    border: solid red 10px;
+    color: red;
+    height:40px;
+    width: 600px;
+    margin-bottom: 30px;
+    text-align: center;
+}

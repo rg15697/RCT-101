@@ -1,0 +1,22 @@
+.Container{
+    border: solid red 2px;
+    width: 95%;
+    margin: auto;
+    
+}
+.formContainer>form>div{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+
+}
+/* .inputCont{
+
+} */
+.inputCont>input{
+    height: 30px;
+    width: 100%;
+}
+/* .selection{
+
+} */

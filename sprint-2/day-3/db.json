@@ -1,0 +1,57 @@
+{
+  "employeeDetails": [
+    {
+      "id": 1,
+      "name": "Aaro gupta",
+      "age": "25",
+      "address": "Azamgarh Uttar Pradesh",
+      "department": "electronics",
+      "salary": 80000,
+      "married": false,
+      "profilePhoto": "imgURL"
+    },
+    {
+      "name": "ROHIT KUMAR GUPTA",
+      "address": "NEAR UBI ATM KUSHAWAN CHITARA MAHMODPUR",
+      "salary": "45444",
+      "age": "24",
+      "department": "Management",
+      "profilePhoto": "C:\\fakepath\\template-35481615779850.jpg",
+      "isMarried": true,
+      "id": 2
+    },
+    {
+      "name": "ROHIT KUMAR GUPTA",
+      "address": "NEAR UBI ATM KUSHAWAN CHITARA MAHMODPUR",
+      "age": "24",
+      "department": "Management",
+      "salary": "234",
+      "isMarried": true,
+      "profilePhoto": "C:\\fakepath\\DSC_0784.JPG",
+      "id": 3
+    },
+    {
+      "isMarried": true,
+      "id": 4
+    },
+    {
+      "name": "Ranjhi singh",
+      "address": "NEAR UBI ATM KUSHAWAN CHITARA MAHMODPUR",
+      "age": "45",
+      "salary": "34345",
+      "department": "Marketing",
+      "isMarried": true,
+      "profilePhoto": "C:\\fakepath\\template-35481615779850.jpg",
+      "id": 5
+    },
+    {
+      "isMarried": true,
+      "name": "satyen",
+      "address": "NEAR UBI ATM KUSHAWAN CHITARA MAHMODPUR",
+      "age": "656",
+      "department": "Management",
+      "salary": "4544444444444444",
+      "id": 6
+    }
+  ]
+}
