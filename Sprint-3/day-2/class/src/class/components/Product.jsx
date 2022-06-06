@@ -6,7 +6,7 @@ const Product = () => {
     const {id} = useParams()
     React.useEffect(()=>{
         if(id){
-            fetch(`  http://localhost:8080/products/${id} `)
+            fetch(`http://localhost:8080/products/${id} `)
             .then((res) => res.json()
             .then((data) =>setProduct(data)))
         }

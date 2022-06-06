@@ -1,0 +1,21 @@
+.container{
+    display:flex;
+    justify-content: center;
+    width: 50%;
+    gap:30px
+}
+
+
+
+.TodoMainCont{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.TaskCont{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}

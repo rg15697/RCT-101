@@ -7,7 +7,7 @@ const Products = () => {
     React.useEffect(()=>{
         const fetchProducts = async ()=> {
             let res = await fetch("http://localhost:8080/products")
-            let data= await res.json()
+            let data = await res.json()
             setProducts(data)
             console.log(products)
         }

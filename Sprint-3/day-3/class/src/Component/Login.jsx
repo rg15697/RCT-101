@@ -7,6 +7,8 @@ const Login = () => {
     const [loginCred,setLoginCred] = React.useState({})
     const {login} = React.useContext(AuthContext)
     const navigate= useNavigate()
+
+    
     const onChange = (e) => {
        const{name ,value} = e.target;
        setLoginCred({
