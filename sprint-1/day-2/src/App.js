@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="App">
         {/* <Counter initValue={1000} /> */}
-        <Task /> 
-        <ToDo />
+        {/* <Task /> */}
+        <ToDo /> 
           {/* ============================Assignments======================== */}
         {/* <Counter initValue={5} /> */}
         {/* <Todo /> */}
