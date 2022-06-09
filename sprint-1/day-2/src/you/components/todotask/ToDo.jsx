@@ -5,9 +5,14 @@ import ToDoItem from "./ToDoItem"
 function ToDo() {
     const [query,setQuery] = React.useState("")
     const [toDos,setToDos] = React.useState([]);
+
+
+
     const handleChange = (e) => {
         setQuery(e.target.value)
     }
+
+
     const onDelete = (id)=> {
         let newtodos = toDos.filter((elem)=> elem.id!=id);
         console.log(newtodos)
@@ -20,18 +25,14 @@ function ToDo() {
          type="text"
          onChange={handleChange}
          value={query}
-
         //  on press enter capture the query
-
          onKeyDownCapture={(e) => {
           if(e.key=='Enter') {
             setToDos([...toDos,{id:Date.now(), value:query,isCompleted:false }])
             setQuery("")
-          }            
-         }}
-
-         
-          />
+            }            
+           }} 
+        />
         <button onClick={() => {
             setToDos([...toDos,{id:Date.now(), value:query,isCompleted:false }])
             setQuery("")
@@ -41,9 +42,8 @@ function ToDo() {
         {toDos.map((elem) => (
            <ToDoItem key={elem.id} props={elem} handleDelete={onDelete} />
         ))}
-    </div>
-       
-    </div>
+    </div>  
+</div>
   )
 }
 export default ToDo
