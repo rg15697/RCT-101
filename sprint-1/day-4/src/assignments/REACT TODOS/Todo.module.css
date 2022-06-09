@@ -1,12 +1,38 @@
 .MainCont{
     border: solid red 2px;
+    width: 500px;
+    margin: auto;
+    height: 100vh;
+}
+.Cont{
+    padding: 15px;
 }
 .TodoInputCont{
-    display: flex;
+    width: 95%;
+    /* display: flex; */
     justify-content: space-between;
-    padding: 10px;
+    /* padding: 10px; */
+    border: solid  2px;
+}
+
+.TodoInputCont button{
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    color: black;
 }
 .addButton{
     border: none;
     outline: none;
+    height: 100%;
+    width: 30px;
+    padding: 5px;
+}
+.formInput{
+    height: 45px;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: black;
 }

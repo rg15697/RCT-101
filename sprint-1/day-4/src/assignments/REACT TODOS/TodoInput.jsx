@@ -7,15 +7,15 @@ const TodoInput = ({value,handleChange,handleAdd}) => {
         <div className={styles.TodoInputCont} >
             <div>
                 <button 
-                className={styles.addButton} 
-                onClick={handleAdd}> + 
+                  disabled={!value}
+                  className={styles.addButton} 
+                  onClick={handleAdd}> + 
                 </button>  
                     <input 
-                    disabled={!value}
-                    type="text"
-                    value={value}
-                    onChange={handleChange}
-                    placeholder="Add a to-do..."
+                      className={styles.formInput}
+                      type="text"
+                      onChange={handleChange}
+                      placeholder="Add a to-do..."
                     />
                
             </div>

@@ -1,20 +1,19 @@
 import React from 'react'
 
-const TodoItem = ({props}) => {
-    const [isCompleted,setIsCompleted] = React.useState(props.isCompleted)
+const TodoItem = ({props,handleStatus,isCompleted}) => {
+
   return (
-      <div key={key}>
-            <div>
+      <div>
                 <input 
                 type="checkbox"  
-                checked={props.isCompleted}
-                onChange={(e)=>setIsCompleted(e.target.checked)}
+                checked={isCompleted}
+                onChange={handleStatus}
                 />
                 <p>{props.value}</p>
-            </div>
-             <div>
+           
+             
                   <i class="fa-regular fa-star"></i>
-            </div>
+           
 
        </div>
        
