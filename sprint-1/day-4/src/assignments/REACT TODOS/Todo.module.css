@@ -36,3 +36,11 @@
     font-size: 30px;
     color: black;
 }
+.TodoItem{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.completed{
+    text-decoration: line-through;
+}

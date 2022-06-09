@@ -7,9 +7,9 @@ const TodoInput = ({value,handleChange,handleAdd}) => {
         <div className={styles.TodoInputCont} >
             <div>
                 <button 
-                  disabled={!value}
-                  className={styles.addButton} 
-                  onClick={handleAdd}> + 
+                disabled={!value}
+                className={styles.addButton} 
+                onClick={handleAdd}> + 
                 </button>  
                     <input 
                       className={styles.formInput}
