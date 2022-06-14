@@ -78,6 +78,7 @@ const Reactform = () => {
     <select 
        onChange={(e)=>sortingData(e.target.value)}
        name="sorting"
+       style={{border:"solid red 2px"}}
        >
            {}<option value="default" >Default</option>
            <option value="h2l">High to low</option>
@@ -89,6 +90,7 @@ const Reactform = () => {
                      name='department'
                      className={styles.selection}
                      onChange={handlefilter}
+                     
                   >
                          <option value="">Select your Department</option>
                          <option value="Management">Management</option>
