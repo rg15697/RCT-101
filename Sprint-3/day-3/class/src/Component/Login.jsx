@@ -18,6 +18,7 @@ const Login = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        handleLogin()
     }
     const handleLogin = () =>{
         navigate("/feeds")
