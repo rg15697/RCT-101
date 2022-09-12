@@ -11,7 +11,7 @@ const BasedOnJsonServer = () => {
     const [name,setName] = React.useState("");
     const [address,setAddress] = React.useState("");
     const [email,setEmail] = React.useState("");
-    const [isLoading,setIsLoading] = React.useState(true);
+    const [isLoading,setIsLoading] = React.useState(false);
     const [isError,setIsError] = React.useState(false);
     const [page,setPage] = React.useState(1)
 
