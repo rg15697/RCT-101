@@ -24,7 +24,6 @@ export const Task = () => {
             <div>
                 <input
                  type="text"
-                //  value={query}
                  onChange={handleChange}
                  placeholder="add Somethibg"
                  />
